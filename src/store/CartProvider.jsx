@@ -7,6 +7,20 @@ const defaultCartState = {
 }
 
 const cartReducer = (state, action) => {
+
+    //NOTE - Switch case example
+    // switch (action.type) {
+    //     case 'Add':
+
+    //         break;
+    //     case 'Remove':
+
+    //     default:
+            
+    //         break;
+
+    // }
+
     if (action.type === 'Add') {
         const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount
 
